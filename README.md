@@ -1,8 +1,7 @@
 # React To-Do List App
 
 *Deployed on Netlify 😉*\
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4069b20f-b191-4865-9b0a-35289e0d39a5/deploy-status)](https://app.netlify.com/sites/to-do-app-reactjs-ahmmmyoo/deploys)\
-[Live Link 🔗](https://to-do-app-reactjs-ahmmmyoo.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4069b20f-b191-4865-9b0a-35289e0d39a5/deploy-status)](https://to-do-app-reactjs-ahmmmyoo.netlify.app/)
 
 
 A simple To-Do List application built with React. This app allows users to add, delete, and rearrange tasks using the `useState` hook for state management. It's a great example of how to handle dynamic lists and user interactions in React.
