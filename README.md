@@ -9,6 +9,7 @@ A simple To-Do List application built with React. This app allows users to add, 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Component Details](#component-details)
+- [Detailed Code Explanation](#detailed-code-explanation)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -152,6 +153,12 @@ return (
   </div>
 );
 ```
+
+## Detailed Code Explanation
+
+For a detailed explanation of the code and how it works, please refer to the [toDoList.jsx](./todoApp/src/ToDoList.jsx) file in the repository. This file includes in-depth comments explaining each function and how the state is managed within the component.
+
+Alternatively, you can view the [ReadMe](./todoApp/src/README.md) file for code explanation directly in the [src](./todoApp/src/) folder.
 
 ## Contributing
 
