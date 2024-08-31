@@ -77,53 +77,53 @@ This is the main component of the application that handles all task-related func
 ### Functions
 
 - `handleInputChange(event)`: Updates the `newTask` state whenever the user types into the input field.
-```jsx
-function handleInputChange(event) {
-  setNewTask(event.target.value);
-}
-```
+    ```jsx
+    function handleInputChange(event) {
+      setNewTask(event.target.value);
+    }
+    ```
 
 - `addTask()`: Adds a new task to the `tasks` list if the input is not empty, then clears the input field.
-```jsx
-function addTask() {
-  if (newTask.trim() !== "") {
-    setTasks((t) => [...t, newTask]);
-    setNewTask("");
-  }
-}
-```
+    ```jsx
+    function addTask() {
+      if (newTask.trim() !== "") {
+        setTasks((t) => [...t, newTask]);
+        setNewTask("");
+      }
+    }
+    ```
 
 - `deleteTask(index)`: Removes a task from the list based on its index.
-```jsx
-function deleteTask(index) {
-  const updatedTasks = tasks.filter((_, i) => i !== index);
-  setTasks(updatedTasks);
-}
-```
+    ```jsx
+    function deleteTask(index) {
+      const updatedTasks = tasks.filter((_, i) => i !== index);
+      setTasks(updatedTasks);
+    }
+    ```
 
 - `moveTaskUp(index)`: Moves a task up in the list if it is not the first task.
-```jsx
-function moveTaskUp(index) {
-  if (index > 0) {
-    const updatedTasks = [...tasks];
-    [updatedTasks[index], updatedTasks[index - 1]] = 
-    [updatedTasks[index - 1], updatedTasks[index]];
-    setTasks(updatedTasks);
-  }
-}
-```
+    ```jsx
+    function moveTaskUp(index) {
+      if (index > 0) {
+        const updatedTasks = [...tasks];
+        [updatedTasks[index], updatedTasks[index - 1]] = 
+        [updatedTasks[index - 1], updatedTasks[index]];
+        setTasks(updatedTasks);
+      }
+    }
+    ```
 
 - `moveTaskDown(index)`: Moves a task down in the list if it is not the last task.
-```jsx
-function moveTaskDown(index) {
-  if (index < tasks.length - 1) {
-    const updatedTasks = [...tasks];
-    [updatedTasks[index], updatedTasks[index + 1]] = 
-    [updatedTasks[index + 1], updatedTasks[index]];
-    setTasks(updatedTasks);
-  }
-}
-```
+    ```jsx
+    function moveTaskDown(index) {
+      if (index < tasks.length - 1) {
+        const updatedTasks = [...tasks];
+        [updatedTasks[index], updatedTasks[index + 1]] = 
+        [updatedTasks[index + 1], updatedTasks[index]];
+        setTasks(updatedTasks);
+      }
+    }
+    ```
 
 ### Rendering
 
